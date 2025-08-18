@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harsh Gupta | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary-color: #64b5f6;
+      --secondary-color: #81c784;
+      --bg-dark: #121212;
+      --bg-card: #1a1a1a;
+      --bg-nav: #242424;
+      --bg-header: #1e1e1e;
+      --text-light: #f5f5f5;
+      --text-muted: #aaaaaa;
+      --font-main: 'Segoe UI', Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      background-color: var(--bg-header);
+      padding: 20px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+    nav {
+      background-color: var(--bg-nav);
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    figure {
+      text-align: center;
+    }
+    figure img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 10px 0;
+      border: 3px solid var(--primary-color);
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    }
+    figure figcaption {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background-color: var(--bg-card);
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #2c2c2c;
+    }
+    tr:nth-child(even) {
+      background-color: #0e1d12;
+    }
+    tr:nth-child(odd) {
+      background-color: #143e27;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    ul li::marker {
+      color: var(--secondary-color);
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    footer {
+      text-align: center;
+      background-color: var(--bg-header);
+      padding: 15px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harsh Gupta</h1>
+    <p>Django | MERN | GenAI | Web3 Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <figure>
+        <img src="/helo.png" alt="Profile picture of Harsh Gupta" title="Harsh Gupta" />
+        <figcaption>Backend Developer | AI Enthusiast</figcaption>
+      </figure>
+      <p>
+        Hello! I'm <strong><u>Harsh Gupta</u></strong>, a B.Tech ECE student at TIET with a GPA of <mark>8.53</mark>.
+        I’m passionate about <b>backend development</b>, <em>automation</em>, and building systems that scale.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>B.Tech ECE</td>
+          <td>TIET, Patiala</td>
+          <td>2023–2027</td>
+          <td>GPA: 8.53</td>
+        </tr>
+        <tr>
+          <td>Schooling</td>
+          <td>DPS Agra</td>
+          <td>2009–2023</td>
+          <td>12th: 91.8%, 10th: 90%</td>
+        </tr>
+      </table>
+      <ol>
+        <li>2025–Now: Backend Intern, Glyptika Studios</li>
+        <li>2023–2027: B.Tech at TIET</li>
+        <li>2009–2023: DPS Agra</li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java, JavaScript, Python, C++</li>
+        <li>React.js, Node.js, Django, Express.js</li>
+        <li>MongoDB, SQL, MySQL, REST APIs</li>
+        <li>Git, GitHub, VS Code, Postman</li>
+        <li>Gemini API, OpenAI API, n8n</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ol>
+        <li>
+          <strong>Job Application System</strong> – 
+          <a href="https://guptaharsh.vercel.app" target="_blank" rel="noopener">See Project</a><br>
+          Built with MERN + n8n + OpenAI. Automates resume review and job outreach.
+        </li>
+        <li>
+          <strong>GenAI Discord Bot</strong> – 
+          <a href="https://guptaharsh.vercel.app" target="_blank" rel="noopener">See Project</a><br>
+          AI chatbot with memory, embeddings, and RAG using Gemini API.
+        </li>
+        <li>
+          <strong>Web3 Lending Dapp</strong> – 
+          <a href="https://guptaharsh.vercel.app" target="_blank" rel="noopener">See Project</a><br>
+          Built with Solidity, React, MetaMask. Handles loans and repayments.
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p><b>Email:</b> <a href="mailto:hgupta1be23@thapar.edu">hgupta1be23@thapar.edu</a></p>
+      <p><b>Phone:</b> <a href="tel:+919359177795">+91 9359177795</a></p>
+      <p>
+        <b>LinkedIn:</b> <a href="https://linkedin.com/in/harshguptaaa" target="_blank">linkedin.com/in/harshguptaaa</a><br>
+        <b>GitHub:</b> <a href="https://github.com/HARSHGUPTA3009" target="_blank">github.com/HARSHGUPTA3009</a>
+      </p>
+      <p><b>Achievements:</b> TIET Scholarship, SIH’24 Finalist, GDSC Web Lead</p>
+    </section>
+  </main>
+
+  <footer>
+    Made by Harsh Gupta
+  </footer>
+</body>
+</html>
