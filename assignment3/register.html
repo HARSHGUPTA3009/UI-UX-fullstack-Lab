@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TechFest 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechFest 2024</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="schedule.html" class="nav-link">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link active">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <h1 class="page-title">Event Registration</h1>
+            <p class="page-description">Join TechFest 2024 and be part of the technology revolution</p>
+
+            <div class="registration-container">
+                <div class="registration-info">
+                    <h2>Why Register?</h2>
+                    <ul class="benefits-list">
+                        <li>✅ Access to all events and workshops</li>
+                        <li>✅ Networking opportunities with industry experts</li>
+                        <li>✅ Certificate of participation</li>
+                        <li>✅ Exclusive TechFest merchandise</li>
+                        <li>✅ Free meals and refreshments</li>
+                        <li>✅ Chance to win exciting prizes</li>
+                    </ul>
+                </div>
+
+                <div class="registration-form-container">
+                    <form id="registrationForm" class="registration-form">
+                        <h2>Registration Form</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="college">College/Organization</label>
+                            <input type="text" id="college" name="college">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event">Primary Event Interest *</label>
+                            <select id="event" name="event" required>
+                                <option value="">Select an event</option>
+                                <option value="coding-marathon">Coding Marathon</option>
+                                <option value="ai-challenge">AI Innovation Challenge</option>
+                                <option value="game-dev">Game Development Contest</option>
+                                <option value="cybersecurity">Cybersecurity CTF</option>
+                                <option value="ui-ux">UI/UX Design Challenge</option>
+                                <option value="workshops">Workshops Only</option>
+                            </select>
+                            <span class="error-message" id="eventError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Experience Level</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="experience" value="beginner">
+                                    <span class="radio-custom"></span>
+                                    Beginner
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="experience" value="intermediate">
+                                    <span class="radio-custom"></span>
+                                    Intermediate
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="experience" value="advanced">
+                                    <span class="radio-custom"></span>
+                                    Advanced
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your expectations or any special requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkbox-custom"></span>
+                                I agree to the <a href="#" class="terms-link">Terms and Conditions</a> *
+                            </label>
+                            <span class="error-message" id="termsError"></span>
+                        </div>
+
+                        <button type="submit" class="submit-button">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechFest 2024</h3>
+                    <p>The premier technology event for students and professionals</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                        <a href="#" class="social-link">📺 YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechFest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
