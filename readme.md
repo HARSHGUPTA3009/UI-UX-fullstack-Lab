@@ -5,7 +5,9 @@
 ## 📂 Assignments
 
 - **Assignment 1:** Portfolio Website (HTML & CSS)  
-- **Assignment 2:** Travel Agency Multi-Page Website  
+- **Assignment 2:** Travel Agency Multi-Page Website
+- **Assignment 3:** College event Multi-Page Website
+- **Assignment 4:** College event Multi-Page Website(upgraded)  
 
 ---
 
